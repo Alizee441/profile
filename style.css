@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Poppins:wght@300;400;500;700");
+
+body {
+  background-color: #2f75af;
+  text-align: center;
+  /* color:white; */
+    margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: column; /* Utilisation de flexbox avec une disposition en colonne */
+  font-family: comfortaa;
+}
+
+
+header ul {
+display: flex;
+align-items: center; /* Alignement vertical au centre */
+list-style: none; /* Supprimez les puces de la liste */
+padding: 1; /* Supprimez les marges intérieures de la liste */
+justify-content:center;
+font-family: comfortaa;
+}
+
+header li {
+  margin: 0 10px; /* Ajoutez une marge horizontale entre les éléments de la liste */
+  font-size: 20px;
+  color: white;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif,justify;
+}
+
+.shark {
+  margin-right: 5px; /* Ajoutez une marge à droite à l'image */
+  width: 50px;
+  height:50px;
+}
+
+.separated-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.requin-mechant {
+  width: 40em;
+  height:40em;
+  display: block;
+  margin-left:auto;
+  margin-right: auto;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 45%;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius:50%;
+  img:hover {
+    cursor: none;
+  }
+}
+
+.requin-mechant:hover {
+  cursor: none;
+}
+
+#button {
+  /* background-color: #2f75af; */
+  border-radius: 50%;
+  /* border-color:#2f75af; */
+  /* color:#2f75af; */
+  margin: 0 auto;
+  display: block;
+  width: 60px;
+  height:60px;
+}
+
+.top-section {
+  flex: 1; /* La partie supérieure prend 50% de l'espace disponible */
+  background-color: #2f75af; /* Couleur de fond pour la partie supérieure */
+  color: white; /* Couleur du texte pour la partie supérieure */
+  padding: 10px; /* Ajoutez une marge intérieure pour l'espace autour du contenu */
+}
+
+.menu{
+  height: 100vh;
+}
+
+.menu_color:hover {
+  color: black;
+  background-color: rgb(110, 110, 110);
+  border-radius: 5px;
+  border-top: 5px solid rgb(110, 110, 110);
+  border-bottom: 5px solid rgb(110, 110, 110);
+  border-left: 10px solid rgb(110, 110, 110);
+  border-right: 10px solid rgb(110, 110, 110);
+}
+
+@media (max-width: 960px) {
+  /* Pour un écran < 960px, cette classe CSS s'applique */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* Pour un écran < 720px, cette classe CSS s'applique */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* Pour un écran < 540px, cette classe CSS s'applique */
+  .container {
+    width: 300px;
+  }
+}
+
+.bottom-section {
+  /* margin-top : 100px; */
+  display: flex; /* Utilisation de flexbox pour aligner les éléments */
+  background-color: white; /* Couleur de fond pour la partie inférieure */
+  color: black; /* Couleur du texte pour la partie inférieure */
+  padding: 20px; /* Ajoutez une marge intérieure pour l'espace autour du contenu */
+  font-size: 20px;
+}
+
+.vroum {
+  flex: 1; /* Le contenu de cette div occupera autant d'espace que possible */
+  padding: 10px;
+  font-family: comfortaa;
+  font-size: 16px;
+  height: 100vh;
+}
+
+.cars {
+  flex: 1; /* Le contenu de cette div occupera autant d'espace que possible */
+  width: 200px;
+  height: 100vh;
+  aspect-ratio: 1/1;
+  width: 100%;
+  height: auto;
+  object-fit:cover;
+  object-position:left;
+}
+#developpement {
+  text-align: center;
+  margin-top: 25rem;
+  font-size: 12px;
+  font-family: comfortaa;
+}
+
+.footer{
+  font-family: comfortaa, #2f75af;
+}
