@@ -4,30 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav_bar.css">
     <title>AKE Portfolio</title>
   </head>
 
   <body>
 
-    <nav class="top-section">
-      <header>
-      <ul>
-        <li><img src="images/requin_alizee_logo.png" class="shark" alt="requin en logo"></li>
-        <li>AKE Portfolio</li>
-        <li class="menu_color">Accueil</li>
-        <li class="menu_color">Mes apps</li>
-        <li class="menu_color">Mes projets de Design UX</li>
-        <li class="menu_color">Mes autres projets</li>
-        <li class="menu_color">À propos de moi...</li>
-      </ul>
-    </nav>
+    <div class="navbar navbar-expand-sm navbar-light navbar-lewagon">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img src="requin_alizee_logo.png" class="shark" alt="requin en logo"></li>
+    </a>      
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Accueil</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Mes apps</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Mes projets d'UX Design</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#">Mes autres projets</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="#">À propos de moi...</a>
+              </li>
+          </ul>
+        </div>
+      </div>
+    </div>
 
-  </header>
 
-    <div class = "menu">
-      <img src="images/requin_alizee_logo.png" alt="requin en logo" id="imageAChanger" width="675px" class="requin-mechant">
-      <img src="images/requin_alizee_2.png" alt="requin qui mange le curseur de la souris" width="675px" id="deuxiemeImage" style="display: none;" class="requin-mechant">
+    <div class = "body">
+      <img src="requin_alizee_logo.png" alt="requin en logo" id="imageAChanger" width="675px" class="requin-mechant">
+      <img src="requin_alizee_2.png" alt="requin qui mange le curseur de la souris" width="675px" id="deuxiemeImage" style="display: none;" class="requin-mechant">
     </div>
 
       <script>
@@ -39,17 +54,9 @@
         });
 
         imageAChanger.addEventListener('mouseout', function() {
-                imageAChanger.src = "images/requin_alizee.png";
+                imageAChanger.src = "requin_alizee.png";
         });
       </script>
-
-      <!-- <button><a href="#bottom">Click</button> -->
-
-      <!-- <button class = button>
-        <a href="#bottom"><img src="images/fleche.png" alt="fleche vers le bas"></a>
-      </button> <button class = button> -->
-        <!-- <button><a href="#bottom"><img src="images/fleche.png" alt="fleche vers le bas"></a></button>
-    </div> -->
 
     <div class="bottom-section">
       <h1 class="vroum">
@@ -63,7 +70,7 @@
       </div>
 
       </h1>
-      <img src="images/photo_voiture_alizee.jpg" class="cars" alt="voiture de luxe">
+      <img src="photo_voiture_alizee.jpg" class="cars" alt="voiture de luxe">
     </div>
 
 </body>
